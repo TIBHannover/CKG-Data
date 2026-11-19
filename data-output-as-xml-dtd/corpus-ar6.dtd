@@ -1,0 +1,38 @@
+<!-- The root container for any abstract art or structured publication -->
+<!ELEMENT work (report_series | ANY)>
+
+<!-- Use this structure when the 'work' is specifically a document -->
+<!ELEMENT report_series (title, description, (report+ | text_division+))>
+<!ATTLIST report_series id ID #REQUIRED>
+
+<!-- At least one of DOI or ISBN is required for a Report -->
+<!ELEMENT report (title, description, ((doi, isbn?) | (isbn, doi?)), license, tags, date, text_division_spm_ts?, text_divisions, pdf?, openalex?)>
+<!ATTLIST report id CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT doi (#PCDATA)>
+<!ELEMENT license (#PCDATA)>
+<!ELEMENT tags (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT pdf (#PCDATA)>
+<!ELEMENT openalex (#PCDATA)>
+
+<!ELEMENT text_division_spm_ts (chapter+)>
+<!ELEMENT text_divisions (text_division+)>
+
+<!-- At least one of DOI or ISBN is required for a Text Division -->
+<!ELEMENT text_division (title, description?, ((doi, isbn?) | (isbn, doi?)), license?, tags?, date?, text_division_spm_ts?, chapters)>
+<!ATTLIST text_division id CDATA #REQUIRED>
+
+<!ELEMENT chapters (chapter+)>
+
+<!-- Chapters stay flexible with optional IDs -->
+<!ELEMENT chapter (title, wiki?, source?, pdf?, doi?, openalex?, tags?)>
+<!ATTLIST chapter id CDATA #IMPLIED>
+
+<!ELEMENT wiki (#PCDATA)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT pdf (#PCDATA)>
+<!ELEMENT openalex (#PCDATA)>
+<!ELEMENT tags (#PCDATA)>
