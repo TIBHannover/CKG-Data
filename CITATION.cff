@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite them using the metadata below."
+title: "Climate Knowledge Graph Core Data for AR6"
+type: dataset
+version: "[1.0.0]"
+date-released: "[YYYY-MM-DD]"
+repository-code: "https://github.com/[owner]/CKG-Data"
+url: "https://github.com/[owner]/CKG-Data"
+license: CC0-1.0
+license-url: "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+keywords:
+  - climate change
+  - IPCC AR6
+  - knowledge graph
+  - linked open data
+  - ontology
+abstract: >-
+  Master copies of datasets (acronyms, authors, bibliographic records,
+  corpus, glossary) from the Climate Knowledge Graph, with the ER model
+  describing how they connect as Linked Open Data. Data are derived from
+  the IPCC Sixth Assessment Report (AR6).
+references:
+  - type: report
+    title: "Climate Change 2021: The Physical Science Basis, Climate Change 2022: Impacts, Adaptation and Vulnerability, Climate Change 2022: Mitigation of Climate Change (IPCC AR6)"
+    authors:
+      - name: "Intergovernmental Panel on Climate Change (IPCC)"
+    url: "https://www.ipcc.ch/assessment-report/ar6/"
+    year: 2023
+authors:
+  - family-names: "[Surname]"
+    given-names: "[Given name]"
+    orcid: "https://orcid.org/[0000-0000-0000-0000]"
+    affiliation: "[Institution]"
