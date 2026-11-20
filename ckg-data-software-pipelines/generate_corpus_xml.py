@@ -26,8 +26,9 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
 
-CSV_FILE = Path(__file__).parent / "corpus-ar6.csv"
-XML_FILE = Path(__file__).parent / "corpus-ar6.xml"
+DATASET_DIR = Path(__file__).resolve().parent.parent / "datasets" / "corpus-ar6"
+CSV_FILE = DATASET_DIR / "corpus-ar6.csv"
+XML_FILE = DATASET_DIR / "corpus-ar6.xml"
 DTD_REF  = "corpus-ar6.dtd"
 
 # DOI -> stable XML id for each report element

@@ -2,6 +2,8 @@
 
 Main copies of the datasets behind the **Climate Knowledge Graph (CKG) for IPCC AR6**, together with the entity-relationship (ER) model that describes how they are linked as Linked Open Data (LOD).
 
+The software pipeline **CKG Data** for Wikibase data portability, including: ETL, import, export. The software utilizes an XML/DTD framework that allows for a copy of dataset to be kept outside of Wikibase coordinated by an Entity Relationship Model that syncronises to the Wikibase data model. 
+
 This is research data. Methods are recorded in [`protocols/`](protocols/) so that every dataset can be traced back to its source and processing steps.
 
 ## Repository layout
@@ -22,7 +24,7 @@ CKG-Data/
 |-- data-model/            ER model and LOD mappings
 |-- protocols/             Research protocols and methods
 |-- source-data/           Original deposits (read-only)
-|-- pipelines/             Scripts that build datasets from source
+|-- ckg-data-software-pipelines/    Scripts that build datasets from source
 `-- docs/                  Longer documentation
 ```
 
@@ -32,7 +34,7 @@ CKG-Data/
 | [`data-model/`](data-model/) | ER model and mappings to LOD. Start here to see how the data connects. |
 | [`protocols/`](protocols/) | Research protocols and methods. |
 | [`source-data/`](source-data/) | Original institutional deposits. Treated as read-only. |
-| [`pipelines/`](pipelines/) | Scripts that convert source data into the datasets. |
+| [`ckg-data-software-pipelines/`](ckg-data-software-pipelines/) | Scripts that convert source data into the datasets. |
 | [`docs/`](docs/) | Longer documentation. |
 
 ## Datasets
